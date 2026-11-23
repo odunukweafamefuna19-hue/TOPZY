@@ -1,1 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090711">
+  <meta name="description" content="TOPZY — Your game. Your power.">
+  <title>TOPZY — Your Game. Your Power.</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="TOPZY home"><span class="brand-mark">T</span> TOPZY</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#games">Games</a>
+      <a href="#how">How it works</a>
+    </nav>
+    <div class="top-actions">
+      <button class="ghost-btn" id="loginBtn" type="button">Log in</button>
+      <button class="primary-btn" id="signupBtn" type="button">Create account</button>
+    </div>
+  </header>
 
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> LEVEL UP YOUR GAME</p>
+        <h1>Your game.<br><span>Your power.</span></h1>
+        <p class="hero-text">Your next top-up starts here. Discover your game, choose a package, and get ready to play.</p>
+        <a class="primary-btn hero-cta" href="#games">Explore games <span aria-hidden="true">↗</span></a>
+        <div class="trust-line"><span>●</span> Secure checkout experience <i></i> Built for gamers</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core"><span>TOP</span><strong>ZY</strong><small>POWER UP</small></div>
+        <div class="floating-chip chip-one">GAME ON</div><div class="floating-chip chip-two">TOP UP</div>
+      </div>
+    </section>
+
+    <section class="games-section" id="games">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE GAME ZONE</p><h2>Choose your game</h2><p class="muted">Find your game and explore available top-up packages.</p></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="gameSearch" type="search" placeholder="Search games..." autocomplete="off"></label>
+      </div>
+      <div id="gamesGrid" class="games-grid"><div class="loading">Loading games...</div></div>
+      <p class="catalogue-note">Game availability and packages will appear when verified supplier products are connected.</p>
+    </section>
+
+    <section class="how-section" id="how">
+      <p class="eyebrow">SIMPLE BY DESIGN</p><h2>Power up in a few steps</h2>
+      <div class="steps">
+        <article><b>01</b><h3>Choose a game</h3><p>Find the game you want to top up.</p></article>
+        <article><b>02</b><h3>Select a package</h3><p>Compare the available packages and price.</p></article>
+        <article><b>03</b><h3>Complete checkout</h3><p>Follow the secure payment and delivery steps.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">T</span> TOPZY</a><span>YOUR GAME. YOUR POWER.</span><span>© <span id="year"></span> TOPZY</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
